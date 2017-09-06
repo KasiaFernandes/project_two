@@ -7,7 +7,7 @@ $color-grey: #6c7279
 
 =font-char($color, $font, $size, $weight)
     color: $color
-    font-family: "$font", sans-serif
+    font-family: ""+$font, sans-serif
     font-size: $size
     font-weight: $weight
     
@@ -144,17 +144,12 @@ $color-grey: #6c7279
     +font-char($color-dark-grey, "Raleway", 22px, 400)
 
 .thumbnail-team h5 
-    color: $color-red
+    +font-char($color-red, Raleway, 13px, 400)
     text-transform: uppercase
-    font-family: 'Raleway', sans-serif
-    font-size: 13px
-    font-weight: 400
 
 .thumbnail-team p 
-    color: $color-grey
-    font-size: 14px
-    font-family: 'Raleway', sans-serif
-    font-weight: 400
+    +font-char($color-grey, Raleway, 14px, 400)
+    
 
 /*CAROUSEL*/
 
@@ -162,7 +157,7 @@ $color-grey: #6c7279
     background-color: #53354a
 
 
-.carousel-caption 
+.carousel-cap 
     color: $color-white
 
 .item img 
@@ -174,24 +169,16 @@ $color-grey: #6c7279
     padding-top: 100px
     padding-bottom: 100px
     h2 
-        font-size: 28px
-        font-family: 'Raleway', sans-serif
-        font-weight: 300
-        color: $color-dark-grey
+        +font-char($color-dark-grey, Raleway, 28px, 300)
+
     h4 
-        font-size: 13px
-        font-weight: 700
-        font-family: 'Raleway', sans-serif
-        color: $color-dark-grey
+        +font-char($color-dark-grey, Raleway, 13px, 700)
         text-transform: uppercase
     .btn 
+        +font-char($color-white, Raleway, 13px, 600)
         background-color: $color-red
         border: none
         border-radius: 2px
-        color: $color-white
-        font-size: 13px
-        font-family: 'Raleway', sans-serif
-        font-weight: 600
         text-transform: uppercase
         padding: 10px 50px
 
@@ -201,31 +188,25 @@ $color-grey: #6c7279
     background-color: #3a3e64
     padding-top: 70px
     padding-bottom: 70px
-    h4 
-        color: $color-white
-        text-transform: uppercase
-        font-size: 14px
-        font-weight: 700
-        font-family: 'Raleway', sans-serif
-    p 
-        color: $color-white
-        font-family: 'Raleway', sans-serif
-        font-size: 14px
-        font-weight: 400
-    .btn 
-        color: $color-white
-        border: 1px solid $color-white
-        border-radius: 2px
-        background-color: #3a3e64
-        height: 40px
-        width: 40px
+    .foot
+        padding-bottom: 30px
+        h4 
+            +font-char($color-white, Raleway, 14px, 700)
+            text-transform: uppercase
+        p 
+            +font-char($color-white, Raleway, 14px, 400)
+        .btn 
+            color: $color-white
+            border: 1px solid $color-white
+            border-radius: 2px
+            background-color: #3a3e64
+            height: 40px
+            width: 40px
 
 .footer-bottom 
     background-color: #313454
     padding-top: 10px
     padding-bottom: 10px
     p 
-        color: #808080
-        font-family: 'Raleway', sans-serif
-        font-size: 14px
-        font-weight: 400
+        +font-char(#808080, Raleway, 14px, 400)
+
