@@ -24,12 +24,13 @@
 /*JUMBOTRON*/
 .parallax {
   background-image: url("https://i.imgur.com/CPwmfc5.jpg");
-  height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  margin-bottom: 100px; }
   .parallax .layer {
     display: block;
     background-color: rgba(58, 62, 100, 0.6);
@@ -66,7 +67,8 @@
 
 .thumbnail-icons:hover {
   cursor: pointer;
-  transform: scale(1.2); }
+  transform: scale(1.2);
+  transition: 0.5s; }
 
 .thumbnail-icons h4 {
   text-transform: uppercase;
@@ -161,6 +163,10 @@
 .item img {
   width: 50vw; }
 
+.carousel-indicators {
+  padding: 0;
+  margin: 0; }
+
 /*START*/
 .start {
   padding-top: 100px;
@@ -222,5 +228,29 @@
     font-family: "Raleway", sans-serif;
     font-size: 14px;
     font-weight: 400; }
+
+@media (max-width: 992px) {
+  .jumbotron .layer h1 {
+    font-size: 50px; }
+  .jumbotron p {
+    font-size: 20px; }
+  .thumbnail-team {
+    padding-bottom: 30px; }
+    .thumbnail-team .caption {
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px; } }
+
+@media (max-width: 768px) {
+  .jumbotron .layer h1 {
+    font-size: 45px; }
+  .jumbotron p {
+    font-size: 16px; }
+  .thumbnail-icons .caption {
+    padding-left: 50px;
+    padding-right: 50px; }
+  .thumbnail-team .caption {
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 /*# sourceMappingURL=project_two.style.css.map */

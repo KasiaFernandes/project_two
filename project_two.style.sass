@@ -38,12 +38,13 @@ $color-grey: #6c7279
 
 .parallax 
     background-image: url("https://i.imgur.com/CPwmfc5.jpg")
-    height: 100vh
+    min-height: 100vh
     background-attachment: fixed
     background-position: center
     background-repeat: no-repeat
     background-size: cover
     position: relative
+    margin-bottom: 100px
     .layer 
         display: block
         background-color: rgba(58, 62, 100, 0.6)
@@ -77,6 +78,7 @@ $color-grey: #6c7279
     &:hover 
         cursor: pointer
         transform: scale(1.2)
+        transition: 0.5s
     h4 
         text-transform: uppercase
         +font-char($color-dark-grey, Raleway, 14px, 700)
@@ -163,6 +165,11 @@ $color-grey: #6c7279
 .item img 
     width: 50vw
 
+.carousel-indicators 
+    padding: 0
+    margin: 0 
+
+
 /*START*/
 
 .start 
@@ -210,3 +217,33 @@ $color-grey: #6c7279
     p 
         +font-char(#808080, Raleway, 14px, 400)
 
+@media (max-width: 992px)
+
+    .jumbotron .layer h1 
+        font-size: 50px
+    
+    .jumbotron p
+        font-size: 20px
+
+    .thumbnail-team 
+        padding-bottom: 30px
+        .caption
+            text-align: center
+            padding-left: 50px
+            padding-right: 50px
+
+@media (max-width: 768px)
+
+    .jumbotron .layer h1 
+        font-size: 45px
+    
+    .jumbotron p
+        font-size: 16px
+    
+    .thumbnail-icons .caption
+        padding-left: 50px
+        padding-right: 50px
+    
+    .thumbnail-team .caption
+        padding-left: 20px
+        padding-right: 20px
